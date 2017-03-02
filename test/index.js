@@ -18,3 +18,9 @@ print 'hello world'
 \`\`\``).trim()).toBe(`<pre><code>print 'hello world'
 </code></pre>`)
 })
+
+test('fence with language name', () => {
+  expect(mdi.render(`\`\`\`python
+print 'hello world'
+\`\`\``).trim()).toBe(`<pre><code class="hljs"><span class="hljs-keyword">print</span> <span class="hljs-string">'hello world'</span></code></pre>`)
+})

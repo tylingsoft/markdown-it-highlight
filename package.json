@@ -2,7 +2,7 @@
   "name": "markdown-it-highlight",
   "version": "0.1.0",
   "description": "highlight.js plugin for markdown-it",
-  "main": "index.js",
+  "main": "src/index.bundle.js",
   "scripts": {
     "build": "node -r babel-register node_modules/.bin/webpack --progress --colors --watch",
     "test": "jest test/index.bundle.js",
@@ -14,12 +14,13 @@
   "devDependencies": {
     "babel-core": "^6.23.1",
     "babel-loader": "^6.3.2",
-    "babel-preset-env": "^1.1.10",
+    "babel-preset-env": "^1.1.11",
     "jest": "^19.0.2",
     "markdown-it": "^8.3.0",
     "npm-check-updates": "^2.10.3",
     "standard": "^9.0.0",
-    "webpack": "^2.2.1"
+    "webpack": "^2.2.1",
+    "webpack-node-externals": "^1.5.4"
   },
   "jest": {
     "testMatch": [

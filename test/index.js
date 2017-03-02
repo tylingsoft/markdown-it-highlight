@@ -11,3 +11,10 @@ test('code block', () => {
 `).trim()).toBe(`<pre><code>print 'hello world'
 </code></pre>`)
 })
+
+test('fence without language name', () => {
+  expect(mdi.render(`\`\`\`
+print 'hello world'
+\`\`\``).trim()).toBe(`<pre><code>print 'hello world'
+</code></pre>`)
+})

@@ -25,9 +25,8 @@ mdi.render(`
 ```
 
 
-## develop
+## test
 
 ```
-yarn build
 yarn test
 ```

@@ -1,30 +1,27 @@
 {
   "name": "markdown-it-highlight",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "highlight.js plugin for markdown-it",
-  "main": "src/index.bundle.js",
+  "main": "src/index.js",
   "scripts": {
-    "build": "node -r babel-register node_modules/.bin/webpack --progress --colors --watch",
-    "test": "jest test/index.bundle.js",
+    "test": "node -r babel-register -r ignore-styles node_modules/.bin/jest",
     "upgrade": "ncu -ua && yarn upgrade"
   },
   "repository": "git@github.com:tylingsoft/markdown-it-highlight.git",
   "author": "Tyler Long <tyler4long@gmail.com>",
   "license": "MIT",
   "devDependencies": {
-    "babel-core": "^6.23.1",
-    "babel-loader": "^6.3.2",
     "babel-preset-env": "^1.1.11",
+    "babel-register": "^6.24.0",
+    "ignore-styles": "^5.0.1",
     "jest": "^19.0.2",
     "markdown-it": "^8.3.0",
     "npm-check-updates": "^2.10.3",
-    "standard": "^9.0.0",
-    "webpack": "^2.2.1",
-    "webpack-node-externals": "^1.5.4"
+    "standard": "^9.0.0"
   },
   "jest": {
     "testMatch": [
-      "**/test/index.bundle.js"
+      "**/test/index.js"
     ]
   },
   "dependencies": {

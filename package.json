@@ -1,10 +1,10 @@
 {
   "name": "markdown-it-highlight",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "highlight.js plugin for markdown-it",
   "main": "src/index.js",
   "scripts": {
-    "test": "node -r babel-register -r ignore-styles node_modules/.bin/jest",
+    "test": "node -r babel-register -r ignore-styles test/index.js",
     "upgrade": "ncu -ua && yarn upgrade"
   },
   "repository": "git@github.com:tylingsoft/markdown-it-highlight.git",
@@ -14,15 +14,9 @@
     "babel-preset-env": "^1.1.11",
     "babel-register": "^6.24.0",
     "ignore-styles": "^5.0.1",
-    "jest": "^19.0.2",
     "markdown-it": "^8.3.0",
     "npm-check-updates": "^2.10.3",
     "standard": "^9.0.0"
-  },
-  "jest": {
-    "testMatch": [
-      "**/test/index.js"
-    ]
   },
   "dependencies": {
     "highlight.js": "^9.9.0"

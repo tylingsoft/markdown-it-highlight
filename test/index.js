@@ -1,6 +1,6 @@
 import assert from 'assert'
 import markdownIt from 'markdown-it'
-import markdownItHighlight from '../src/index'
+import markdownItHighlight from '../dist/index'
 
 const mdi = markdownIt()
 mdi.use(markdownItHighlight)
